@@ -87,7 +87,6 @@ export default function Home() {
         </form>
       </div>
       <br />
-      <br />
 
       <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40">
         <div className="flex flex-col justify-center w-full  px-2 pt-2 pb-2 ml-2 rounded-xl  shadow-xl bg-indigo-400 border-2 border-black ">
@@ -104,38 +103,74 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div style={{ height: 400 }}>
-            <ResponsiveCalendar
-              data={calendarData}
-              from="2021-01-08"
-              to="2021-08-09"
-              emptyColor="#eeeeee"
-              colors={["#61cdbb", "#97e3d5", "#e8c1a0", "#f47560"]}
-              margin={{
-                top: 40,
-                right: 40,
-                bottom: 40,
-                left: 40,
-              }}
-              yearSpacing={40}
-              monthBorderColor="#ffffff"
-              dayBorderWidth={2}
-              dayBorderColor="#ffffff"
-              legends={[
-                {
-                  anchor: "bottom-right",
-                  direction: "row",
-                  translateY: 36,
-                  itemCount: 4,
-                  itemWidth: 42,
-                  itemHeight: 36,
-                  itemsSpacing: 14,
-                  itemDirection: "right-to-left",
-                },
-              ]}
-            />
+          <div style={{ overflowX: "auto" }}>
+            <div style={{ height: 400 }} className="scrollh">
+              <ResponsiveCalendar
+                data={calendarData}
+                from="2021-01-08"
+                to="2021-08-09"
+                emptyColor="#eeeeee"
+                colors={["#61cdbb", "#97e3d5", "#e8c1a0", "#f47560"]}
+                margin={{
+                  top: 40,
+                  right: 40,
+                  bottom: 40,
+                  left: 40,
+                }}
+                yearSpacing={40}
+                monthBorderColor="#ffffff"
+                dayBorderWidth={2}
+                dayBorderColor="#ffffff"
+                legends={[
+                  {
+                    anchor: "bottom-right",
+                    direction: "row",
+                    translateY: 36,
+                    itemCount: 4,
+                    itemWidth: 42,
+                    itemHeight: 36,
+                    itemsSpacing: 14,
+                    itemDirection: "right-to-left",
+                  },
+                ]}
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <br />
+      <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40">
+        <div className="flex flex-col justify-center w-full  px-2 pt-2 pb-2 ml-2 rounded-xl  shadow-xl bg-red-100 border-2 border-black ">
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Choose month
+            </label>
+            <select className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  ">
+              <option defaultValue="January">January</option>
+              <option defaultValue="February">February</option>
+              <option defaultValue="March">March</option>
+              <option defaultValue="April">April</option>
+              <option defaultValue="May">May</option>
+              <option defaultValue="June">June</option>
+              <option defaultValue="July">July</option>
+              <option defaultValue="August">August</option>
+              <option defaultValue="September">September</option>
+              <option defaultValue="October">October</option>
+              <option defaultValue="November">November</option>
+              <option defaultValue="December">December</option>
+            </select>
+          </div>
+          <button
+            className="uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline"
+          >
+            Load
+          </button>
+        </div>
+      </div>
+      <br />
+      <div className="relative container m-auto px-6 text-stone-950 md:px-12 xl:px-40 flex  justify-center">
+        <p className="antialiased stl">Samadrit das</p>
       </div>
     </main>
   );
