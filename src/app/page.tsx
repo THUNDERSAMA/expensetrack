@@ -169,6 +169,167 @@ export default function Home() {
         </div>
       </div>
       <br />
+      <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40">
+        <div className="flex flex-col justify-center w-full  px-2 pt-2 pb-2 ml-2 rounded-xl  shadow-xl bg-orange-200 border-2 border-black ">
+          <div className="flex justify-center pt-6">
+            <div className="text-5xl font-extrabold leading-none tracking-tight mfont">
+              <span className="box-decoration-slice text-white bg-gradient-to-r from-indigo-600 to-pink-500 leading-[3.5rem] px-2 rounded-xl">
+                Stock
+                <br />
+                News
+              </span>
+            </div>
+          </div>
+          <br />
+          <div className=" box-border max-w-7xl mx-4 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3">
+            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-lime-700 flex flex-col bg-clip-border">
+              <div className="flex pb-6 items-center justify-between">
+                <div className="flex">
+                  <div className="flex flex-col">
+                    <div>
+                      <a
+                        className="inline-block text-lg font-bold dark:text-white"
+                        href="#"
+                      >
+                        Wade Warren
+                      </a>
+                    </div>
+                    <div className="text-slate-500 dark:text-slate-300 dark:text-slate-400">
+                      July 17, 2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 className="text-3xl font-extrabold dark:text-white">
+                Web Design templates Selection
+              </h2>
+              <div className="py-4">
+                <div className="flex justify-between gap-1 mb-1">
+                  <a className="flex" href="#">
+                    <img
+                      className="max-w-full rounded-tl-lg"
+                      src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="dark:text-slate-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-cyan-800 flex flex-col bg-clip-border">
+              <div className="flex pb-6 items-center justify-between">
+                <div className="flex">
+                  <div className="flex flex-col">
+                    <div>
+                      <a
+                        className="inline-block text-lg font-bold dark:text-white"
+                        href="#"
+                      >
+                        Wade Warren
+                      </a>
+                    </div>
+                    <div className="text-slate-500 dark:text-slate-300 dark:text-slate-400">
+                      July 17, 2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 className="text-3xl font-extrabold dark:text-white">
+                Web Design templates Selection
+              </h2>
+              <div className="py-4">
+                <div className="flex justify-between gap-1 mb-1">
+                  <a className="flex" href="#">
+                    <img
+                      className="max-w-full rounded-tl-lg"
+                      src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="dark:text-slate-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+            <article className="mb-4 break-inside p-6 rounded-xl  bg-rose-900	 flex flex-col bg-clip-border">
+              <div className="flex pb-6 items-center justify-between">
+                <div className="flex">
+                  <div className="flex flex-col">
+                    <div>
+                      <a
+                        className="inline-block text-lg font-bold dark:text-white"
+                        href="#"
+                      >
+                        Wade Warren
+                      </a>
+                    </div>
+                    <div className="text-slate-500 dark:text-slate-300 dark:text-slate-400">
+                      July 17, 2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 className="text-3xl font-extrabold dark:text-white">
+                Web Design templates Selection
+              </h2>
+              <div className="py-4">
+                <div className="flex justify-between gap-1 mb-1">
+                  <a className="flex" href="#">
+                    <img
+                      className="max-w-full rounded-tl-lg"
+                      src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="dark:text-slate-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-violet-900	 flex flex-col bg-clip-border">
+              <div className="flex pb-6 items-center justify-between">
+                <div className="flex">
+                  <div className="flex flex-col">
+                    <div>
+                      <a
+                        className="inline-block text-lg font-bold dark:text-white"
+                        href="#"
+                      >
+                        Wade Warren
+                      </a>
+                    </div>
+                    <div className="text-slate-500 dark:text-slate-300 dark:text-slate-400">
+                      July 17, 2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 className="text-3xl font-extrabold dark:text-white">
+                Web Design templates Selection
+              </h2>
+              <div className="py-4">
+                <div className="flex justify-between gap-1 mb-1">
+                  <a className="flex" href="#">
+                    <img
+                      className="max-w-full rounded-tl-lg"
+                      src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="dark:text-slate-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <br />
       <div className="relative container m-auto px-6 text-stone-950 md:px-12 xl:px-40 flex  justify-center">
         <p className="antialiased stl">Samadrit das</p>
       </div>

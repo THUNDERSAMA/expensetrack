@@ -39,6 +39,10 @@ body {
 .stl{
   font-family: 'Caveat', cursive;
 }
+/* .break-inside {
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+} */
 @media screen and  (max-width: 500px) {
   .scrollh{
    width: 800px;
