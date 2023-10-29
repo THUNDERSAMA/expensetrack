@@ -5,10 +5,24 @@ import { Chart } from "react-google-charts";
 import { ResponsiveCalendar } from "@nivo/calendar";
 import { calendarData } from "./calender";
 import { Span } from "next/dist/trace";
+import { useState } from "react";
 
 export default function Home() {
+  const [name, setName] = useState("");
+  const [Category, setCategory] = useState("grocery");
+  const [budget, setBudget] = useState("");
+  const [status, setStatus] = useState("2");
+  const submithandle = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    console.log(name);
+    console.log(Category);
+
+    console.log(budget);
+
+    console.log(status);
+  };
   return (
-    <main className="relative py-8 flex flex-col ">
+    <main className="relative py-8 px-6 flex flex-col ">
       <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40 flex flex-row justify-center">
         <p className="text-2xl font-semibold mfont ">
           <span className="cvb">Expenso</span>
@@ -22,12 +36,18 @@ export default function Home() {
       </div>
       <br />
       <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40">
-        <form className="flex flex-col justify-center w-full  px-8 pt-6 pb-8 ml-2 rounded-xl  shadow-xl bg-amber-300 border-2 border-black ">
+        <form
+          className="flex flex-col justify-center w-full  px-8 pt-6 pb-8 ml-2 rounded-xl  shadow-xl bg-amber-300 border-2 border-black "
+          onSubmit={submithandle}
+        >
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
               Category
             </label>
-            <select className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  ">
+            <select
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md "
+              onChange={(e) => setCategory(e.target.value)}
+            >
               <option defaultValue="grocery">grocery</option>
 
               <option defaultValue="transportation">transportation</option>
@@ -61,26 +81,56 @@ export default function Home() {
               <option defaultValue="investments">investments</option>
             </select>
           </div>
+          <div className="flex flex-row-reverse flex-wrap-reverse columns-2">
+            <div className=" flex-none h-16">
+              <select
+                className="block px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md "
+                onChange={(e) => setStatus(e.target.value)}
+              >
+                <option defaultValue="2">Invest</option>
+
+                <option defaultValue="1">Spend</option>
+
+                <option defaultValue="3">Lend</option>
+              </select>
+            </div>
+            <div className="grow">
+              <label className="block text-gray-700 text-sm font-bold mb-2">
+                Rupees
+              </label>
+              <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                <div className="flex">
+                  <span className="flex items-center leading-normal bg-grey-lighter border-1 rounded-r-none border border-r-0 border-blue-300 px-3 whitespace-no-wrap text-grey-dark text-sm w-12 h-10 bg-blue-300 justify-center items-center  text-xl rounded-lg ">
+                    <CurrencyRupeeIcon />
+                  </span>
+                </div>
+                <input
+                  type="number"
+                  className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow"
+                  placeholder="100"
+                  onChange={(e) => setBudget(e.target.value)}
+                />
+              </div>
+            </div>
+          </div>
+          <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
-              Rupees
+              Name it
             </label>
             <div className="flex flex-wrap items-stretch w-full mb-4 relative">
-              <div className="flex">
-                <span className="flex items-center leading-normal bg-grey-lighter border-1 rounded-r-none border border-r-0 border-blue-300 px-3 whitespace-no-wrap text-grey-dark text-sm w-12 h-10 bg-blue-300 justify-center items-center  text-xl rounded-lg ">
-                  <CurrencyRupeeIcon />
-                </span>
-              </div>
               <input
-                type="number"
+                type="text"
                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow"
                 placeholder="100"
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
           </div>
           <button
             className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
+            type="submit"
           >
             Track it
           </button>
@@ -182,7 +232,7 @@ export default function Home() {
           </div>
           <br />
           <div className=" box-border max-w-7xl mx-4 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3">
-            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-lime-700 flex flex-col bg-clip-border">
+            <article className="mb-4 break-inside p-6 rounded-xl  bg-lime-700 flex flex-col bg-clip-border">
               <div className="flex pb-6 items-center justify-between">
                 <div className="flex">
                   <div className="flex flex-col">
@@ -218,7 +268,7 @@ export default function Home() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </article>
-            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-cyan-800 flex flex-col bg-clip-border">
+            <article className="mb-4 break-inside p-6 rounded-xl bg-cyan-800 flex flex-col bg-clip-border">
               <div className="flex pb-6 items-center justify-between">
                 <div className="flex">
                   <div className="flex flex-col">
@@ -254,7 +304,7 @@ export default function Home() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </article>
-            <article className="mb-4 break-inside p-6 rounded-xl  bg-rose-900	 flex flex-col bg-clip-border">
+            <article className="mb-4 break-inside p-6 rounded-xl bg-rose-900	flex flex-col bg-clip-border">
               <div className="flex pb-6 items-center justify-between">
                 <div className="flex">
                   <div className="flex flex-col">
@@ -290,7 +340,7 @@ export default function Home() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </article>
-            <article className="mb-4 break-inside p-6 rounded-xl bg-white bg-violet-900	 flex flex-col bg-clip-border">
+            <article className="mb-4 break-inside p-6 rounded-xl bg-violet-900 flex flex-col bg-clip-border">
               <div className="flex pb-6 items-center justify-between">
                 <div className="flex">
                   <div className="flex flex-col">
