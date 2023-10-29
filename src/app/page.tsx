@@ -256,9 +256,12 @@ export default function Home() {
               <div className="py-4">
                 <div className="flex justify-between gap-1 mb-1">
                   <a className="flex" href="#">
-                    <img
+                    <Image
                       className="max-w-full rounded-tl-lg"
                       src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                      alt={""}
+                      height={200}
+                      width={200}
                     />
                   </a>
                 </div>
@@ -292,9 +295,12 @@ export default function Home() {
               <div className="py-4">
                 <div className="flex justify-between gap-1 mb-1">
                   <a className="flex" href="#">
-                    <img
+                    <Image
                       className="max-w-full rounded-tl-lg"
                       src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                      alt={""}
+                      height={200}
+                      width={200}
                     />
                   </a>
                 </div>
@@ -328,9 +334,12 @@ export default function Home() {
               <div className="py-4">
                 <div className="flex justify-between gap-1 mb-1">
                   <a className="flex" href="#">
-                    <img
+                    <Image
                       className="max-w-full rounded-tl-lg"
                       src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                      alt={""}
+                      height={200}
+                      width={200}
                     />
                   </a>
                 </div>
@@ -364,9 +373,12 @@ export default function Home() {
               <div className="py-4">
                 <div className="flex justify-between gap-1 mb-1">
                   <a className="flex" href="#">
-                    <img
+                    <Image
                       className="max-w-full rounded-tl-lg"
                       src="https://images.pexels.com/photos/92866/pexels-photo-92866.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                      alt={""}
+                      height={200}
+                      width={200}
                     />
                   </a>
                 </div>
